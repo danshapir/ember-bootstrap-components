@@ -163,17 +163,13 @@ export default Ember.Service.extend(Ember.Evented, {
       Ember.assert("Template " + view + " was specified for Modal but template could not be found.", template);
       if (template) {
         modalComponent.setProperties({
-          body: Ember.View.extend({
-            template: template,
-            controller: controller
-          })
+          compiledTemp: template,
+          controller: controller
         });
       }
     } else if (Ember.typeOf(view) === "class") {
-
       modalComponent.setProperties({
         compiledTemp: view.template,
-        body: view,
         controller: controller
       });
     }
