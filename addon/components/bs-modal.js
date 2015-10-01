@@ -106,7 +106,7 @@ export default Ember.Component.extend(Ember.Evented, {
         // If it's the header close icon
         if (target.hasClass('close') && target.parent().hasClass('modal-header')) {
           // If a button is marked as close we should call it to make sure the close action is made
-          var cancelButton = this.get('footerButtons').findBy('cancel', true);
+          var cancelButton = (this.get('footerButtons') || []).findBy('cancel', true);
           if (Ember.isPresent(cancelButton)) {
             this.get('targetObject').send(cancelButton.get('action'))
           }
@@ -117,7 +117,7 @@ export default Ember.Component.extend(Ember.Evented, {
     keyPressed: function(event) {
       if (event.keyCode === 27 && this.get('keyClose') && this.get('zindex') === this.get('bootstrapModalManager').get('zindex')) {
         // If a button is marked as close we should call it to make sure the close action is made
-        var cancelButton = this.get('footerButtons').findBy('cancel', true);
+        var cancelButton = (this.get('footerButtons') || []).findBy('cancel', true);
         if (Ember.isPresent(cancelButton)) {
           this.get('targetObject').send(cancelButton.get('action'))
         }
