@@ -1,6 +1,6 @@
-url: "http://kaliber5.github.io/ember-bootstrap/" # the base hostname & protocol for your site
-baseurl: "/ember-bootstrap"
-title: "ember-bootstrap"
+url: "http://danshapir.github.io/ember-bootstrap-components/" # the base hostname & protocol for your site
+baseurl: "/ember-bootstrap-components"
+title: "ember-bootstrap-components"
 
 # This is used by feed.xml. Uncomment if you want to use it.
 # description: "..."
