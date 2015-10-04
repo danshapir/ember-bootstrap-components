@@ -3,6 +3,6 @@ module.exports = {
    },
 
    afterInstall: function() {
-       return Promise.all([this.addBowerPackageToProject('bootstrap'),this.addBowerPackageToProject('waves', '^0.7.2')]);
+       return this.addBowerPackageToProject( [{name: 'bootstrap', target: 'latest'}, {name:'waves', target:'^0.7.2'}]);
    }
 };
