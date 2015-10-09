@@ -7,4 +7,8 @@
   height: 100%;
 }
 
+.waves-pointer-none {
+  pointer-events: none;
+}
+
 @import "partials/modal"

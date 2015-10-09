@@ -21,7 +21,7 @@ module.exports = {
             throw new Error('ember-cli-bootstrap requires ember-cli version 0.0.41 or greater.\n');
         }
 
-        var options         = extend(defaultOptions, app.options['ember-bootstrap']);
+        var options         = extend(defaultOptions, app.options['ember-bootstrap-components']);
         var bootstrapPath   = path.join(app.bowerDirectory, 'bootstrap/dist');
 
         // Import css from bootstrap
