@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('alert');
     this.route('accordion');
     this.route('collapse');
+    this.route('waves');
 });
 
 export default Router;
