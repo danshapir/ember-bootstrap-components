@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import ComponentChildMixin from 'ember-bootstrap/mixins/component-child';
-import ComponentParentMixin from 'ember-bootstrap/mixins/component-parent';
+import ComponentChildMixin from 'ember-bootstrap-components/mixins/component-child';
+import ComponentParentMixin from 'ember-bootstrap-components/mixins/component-parent';
 
 import { module, test } from 'qunit';
 

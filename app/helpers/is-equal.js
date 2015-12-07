@@ -1,1 +1,1 @@
-export { default, isEqual } from 'ember-bootstrap/helpers/is-equal';
+export { default, isEqual } from 'ember-bootstrap-components/helpers/is-equal';
