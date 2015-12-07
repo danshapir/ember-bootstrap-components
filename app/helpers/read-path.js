@@ -1,1 +1,1 @@
-export { default, readPath } from 'ember-bootstrap/helpers/read-path';
+export { default, readPath } from 'ember-bootstrap-components/helpers/read-path';

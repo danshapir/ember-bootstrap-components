@@ -1,1 +1,1 @@
-export { default, isNot } from 'ember-bootstrap/helpers/is-not';
+export { default, isNot } from 'ember-bootstrap-components/helpers/is-not';
