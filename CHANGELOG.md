@@ -1,3 +1,8 @@
+<a name"0.6.7"></a>
+## 0.6.7 (2015-12-12)
+**
+Ember 2.0 fixes thanks to EVILoptimist
+
 <a name"0.6.0"></a>
 ## 0.6.2 (2015-09-29)
 **
