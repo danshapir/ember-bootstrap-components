@@ -148,7 +148,8 @@ export default Ember.Service.extend(Ember.Evented, {
     }
 
     cl = container.lookup("component-lookup:main");
-    modalComponent = cl.lookupFactory("bs-modal", container).create();
+    let owner = Ember.getOwner(this);
+    modalComponent = cl.lookupFactory("bs-modal", owner).create(owner.ownerInjection());
 
     modalComponent.setProperties({
       name: name,
